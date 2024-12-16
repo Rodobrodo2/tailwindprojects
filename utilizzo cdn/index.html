@@ -159,7 +159,79 @@
             Chiama all'azione
         </button>
     </div>
+    <!-- Contenitore della griglia -->
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold text-center mb-8">Griglia Responsiva</h1>
 
+        <!-- Griglia Responsiva -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <!-- Elemento 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-lg font-semibold mb-4">Elemento 1</h2>
+                <p class="text-gray-700">Contenuto descrittivo del primo elemento.</p>
+            </div>
+
+            <!-- Elemento 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-lg font-semibold mb-4">Elemento 2</h2>
+                <p class="text-gray-700">Contenuto descrittivo del secondo elemento.</p>
+            </div>
+
+            <!-- Elemento 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-lg font-semibold mb-4">Elemento 3</h2>
+                <p class="text-gray-700">Contenuto descrittivo del terzo elemento.</p>
+            </div>
+
+            <!-- Elemento 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-lg font-semibold mb-4">Elemento 4</h2>
+                <p class="text-gray-700">Contenuto descrittivo del quarto elemento.</p>
+            </div>
+
+            <!-- Elemento 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-lg font-semibold mb-4">Elemento 5</h2>
+                <p class="text-gray-700">Contenuto descrittivo del quinto elemento.</p>
+            </div>
+
+            <!-- Elemento 6 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-lg font-semibold mb-4">Elemento 6</h2>
+                <p class="text-gray-700">Contenuto descrittivo del sesto elemento.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold text-center mb-8">Mostra/Nascondi Elementi</h1>
+
+        <!-- Contenitore -->
+        <div class="bg-white p-6 rounded-lg shadow-lg space-y-4">
+
+            <!-- Elemento visibile solo su schermi piccoli -->
+            <div class="bg-blue-200 text-blue-800 p-4 rounded-lg text-center md:hidden">
+                <p>Visibile solo su **schermi piccoli** (mobile).</p>
+            </div>
+
+            <!-- Elemento visibile solo su schermi medi -->
+            <div class="bg-green-200 text-green-800 p-4 rounded-lg text-center hidden md:block lg:hidden">
+                <p>Visibile solo su **schermi medi** (tablet).</p>
+            </div>
+
+            <!-- Elemento visibile solo su schermi grandi -->
+            <div class="bg-purple-200 text-purple-800 p-4 rounded-lg text-center hidden lg:block">
+                <p>Visibile solo su **schermi grandi** (desktop).</p>
+            </div>
+
+            <!-- Elemento sempre visibile -->
+            <div class="bg-gray-200 text-gray-800 p-4 rounded-lg text-center">
+                <p>Questo elemento è visibile su **tutti i dispositivi**.</p>
+            </div>
+        </div>
+    </div>
 
 
 </body>
