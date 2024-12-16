@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerarchia di Stili con Tailwind CSS</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerarchia di Stili con Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100">
 
-  <!-- Livello 1: Contenitore principale con stili generali -->
-  <div class="max-w-screen-xl mx-auto py-8 px-4">
-    
-    <!-- Livello 2: Intestazione con stili per il titolo principale -->
-    <h1 class="text-4xl font-semibold text-blue-600 mb-6">
-      Benvenuto nel nostro sito
-    </h1>
+    <!-- Livello 1: Contenitore principale con stili generali -->
+    <div class="max-w-screen-xl mx-auto py-8 px-4">
 
-    <!-- Livello 3: Sezione di contenuti, con un pannello card -->
-    <section class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <h2 class="text-2xl font-medium text-gray-800 mb-4">Chi Siamo</h2>
-        <p class="text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac erat vel lectus mollis tincidunt ac vel velit.</p>
-        <button class="mt-4 px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors">
-          Scopri di più
-        </button>
-      </div>
+        <!-- Livello 2: Intestazione con stili per il titolo principale -->
+        <h1 class="text-4xl font-semibold text-blue-600 mb-6">
+            Benvenuto nel nostro sito
+        </h1>
 
-      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <h2 class="text-2xl font-medium text-gray-800 mb-4">Cosa Offriamo</h2>
-        <p class="text-gray-600 leading-relaxed">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum dui faucibus.</p>
-        <button class="mt-4 px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors">
-          Approfondisci
-        </button>
-      </div>
-    </section>
+        <!-- Livello 3: Sezione di contenuti, con un pannello card -->
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h2 class="text-2xl font-medium text-gray-800 mb-4">Chi Siamo</h2>
+                <p class="text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                    ac erat vel lectus mollis tincidunt ac vel velit.</p>
+                <button class="mt-4 px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors">
+                    Scopri di più
+                </button>
+            </div>
 
-    <!-- Livello 4: Footer con stili per il piè di pagina -->
-    <footer class="mt-12 py-6 bg-gray-800 text-white text-center">
-      <p class="text-sm">© 2024 La nostra Azienda. Tutti i diritti riservati.</p>
-    </footer>
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h2 class="text-2xl font-medium text-gray-800 mb-4">Cosa Offriamo</h2>
+                <p class="text-gray-600 leading-relaxed">Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis enim lobortis scelerisque fermentum dui faucibus.</p>
+                <button class="mt-4 px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors">
+                    Approfondisci
+                </button>
+            </div>
+        </section>
 
-  </div>
+        <!-- Livello 4: Footer con stili per il piè di pagina -->
+        <footer class="mt-12 py-6 bg-gray-800 text-white text-center">
+            <p class="text-sm">© 2024 La nostra Azienda. Tutti i diritti riservati.</p>
+        </footer>
+    </div>
+    <!-- Contenitore principale con Flex -->
+    <div class="flex flex-row gap-4 justify-center py-10 px-4">
+
+        <!-- Colonna 1 -->
+        <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-semibold mb-4">Colonna 1</h2>
+            <p class="text-gray-700">Questo è il contenuto della prima colonna. Puoi aggiungere testo, immagini o altri
+                componenti.</p>
+        </div>
+
+        <!-- Colonna 2 -->
+        <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-semibold mb-4">Colonna 2</h2>
+            <p class="text-gray-700">Questo è il contenuto della seconda colonna. Anche questa può contenere qualsiasi
+                tipo di contenuto.</p>
+        </div>
+
+        <!-- Colonna 3 -->
+        <div class="flex-1 bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-semibold mb-4">Colonna 3</h2>
+            <p class="text-gray-700">Questa è la terza colonna. Puoi aggiungere i tuoi contenuti qui, come per le altre
+                colonne.</p>
+        </div>
+
+    </div>
 
 </body>
+
 </html>
 
 <!--Gli stili più generali sono applicati al body e ai contenitori principali.
