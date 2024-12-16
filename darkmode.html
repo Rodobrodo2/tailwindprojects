@@ -1,20 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tilwind Project</title>
     <link rel="stylesheet" href="output.css">
 </head>
+
 <body class="bg-slate-300">
     <div class="flex-col m-4  dark:bg-slate-950">
         <h1 class="text-3xl font-bold underline dark:text-white">
             Hello world!
         </h1>
-        <p class="mt-4 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus enim ut iste praesentium, unde quas tempora eligendi laboriosam. Quam quis expedita ullam soluta omnis error nostrum, velit repellendus consequatur!</p>
-        <button id="darkModeToggle" class="mt-4 border border-black bg-slate-300 p-2 text-black dark:border-white dark:text-white dark:bg-blue-950"> Dark Mode: <span id="darkModeStatus" class="dark:text-white">Inactive</span></button>
+        <p class="mt-4 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus
+            enim ut iste praesentium, unde quas tempora eligendi laboriosam. Quam quis expedita ullam soluta omnis error
+            nostrum, velit repellendus consequatur!</p>
+        <button id="darkModeToggle"
+            class="mt-4 border border-black bg-slate-300 p-2 text-black dark:border-white dark:text-white dark:bg-blue-950">
+            Dark Mode: <span id="darkModeStatus" class="dark:text-white">Inactive</span></button>
+    </div>
+    <div class="m-4">
+        <form class="bg-white p-6 rounded shadow-md w-96 space-y-4">
+            <h2 class="text-2xl font-bold text-gray-700 mb-4">Modulo di Contatto</h2>
+
+            <!-- Campo Nome -->
+            <div>
+                <label for="name" class="block text-gray-700 font-medium">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" class="mt-1 w-full border border-gray-300 rounded-md p-2 text-gray-900 
+                   focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none
+                   active:border-green-500 active:ring-2 active:ring-green-500 transition-all" />
+            </div>
+
+            <!-- Campo Email -->
+            <div>
+                <label for="email" class="block text-gray-700 font-medium">Email</label>
+                <input type="email" id="email" name="email" placeholder="Inserisci la tua email" class="mt-1 w-full border border-gray-300 rounded-md p-2 text-gray-900 
+                   focus:ring-2 focus:ring-purple-500 focus:border-purple-500 focus:outline-none
+                   active:border-orange-500 active:ring-2 active:ring-orange-500 transition-all" />
+            </div>
+
+            <!-- Campo Messaggio -->
+            <div>
+                <label for="message" class="block text-gray-700 font-medium">Messaggio</label>
+                <textarea id="message" name="message" rows="4" placeholder="Scrivi il tuo messaggio" class="mt-1 w-full border border-gray-300 rounded-md p-2 text-gray-900 
+                   focus:ring-2 focus:ring-teal-500 focus:border-teal-500 focus:outline-none
+                   active:border-yellow-500 active:ring-2 active:ring-yellow-500 transition-all"></textarea>
+            </div>
+
+            <!-- Bottone Invia -->
+            <button type="submit" class="w-full bg-blue-500 text-white font-medium py-2 px-4 rounded-md 
+                 hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 focus:outline-none 
+                 active:bg-blue-700 transition-all">
+                Invia
+            </button>
+    </div>
+
+    <div class="m-4">
+        <form class="bg-white p-6 rounded shadow-md w-96 space-y-4">
+            <h2 class="text-2xl font-bold text-gray-700 mb-4">Modulo di Registrazione</h2>
+        
+            <!-- Campo Nome -->
+            <div>
+              <label for="name" class="block text-gray-700 font-medium">Nome</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Inserisci il tuo nome" 
+                class="mt-1 w-full border border-gray-300 rounded-md p-2 text-gray-900 
+                       focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none
+                       disabled:bg-gray-200 disabled:text-gray-400 disabled:border-gray-200 disabled:cursor-not-allowed"
+                disabled
+              />
+            </div>
+        
+            <!-- Campo Email -->
+            <div>
+              <label for="email" class="block text-gray-700 font-medium">Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Inserisci la tua email" 
+                class="mt-1 w-full border border-gray-300 rounded-md p-2 text-gray-900 
+                       focus:ring-2 focus:ring-purple-500 focus:border-purple-500 focus:outline-none
+                       disabled:bg-gray-200 disabled:text-gray-400 disabled:border-gray-200 disabled:cursor-not-allowed"
+                disabled
+              />
+            </div>
+        
+            <!-- Campo Password -->
+            <div>
+              <label for="password" class="block text-gray-700 font-medium">Password</label>
+              <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Inserisci una password" 
+                class="mt-1 w-full border border-gray-300 rounded-md p-2 text-gray-900 
+                       focus:ring-2 focus:ring-teal-500 focus:border-teal-500 focus:outline-none
+                       disabled:bg-gray-200 disabled:text-gray-400 disabled:border-gray-200 disabled:cursor-not-allowed"
+              />
+            </div>
+        
+            <!-- Bottone Invia -->
+            <button 
+              type="submit" 
+              class="w-full bg-blue-500 text-white font-medium py-2 px-4 rounded-md 
+                     hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 focus:outline-none 
+                     disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed transition-all"
+              disabled
+            >
+              Invia
+            </button>
+        
+            <!-- Bottone di Reset -->
+            <button 
+              type="reset" 
+              class="w-full bg-gray-500 text-white font-medium py-2 px-4 rounded-md 
+                     hover:bg-gray-600 focus:ring-2 focus:ring-gray-400 focus:outline-none 
+                     disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed transition-all"
+            >
+              Reset
+            </button>
     </div>
 
     <script src="/script.js"></script>
 </body>
+
 </html>
